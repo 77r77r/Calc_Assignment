@@ -9,47 +9,30 @@ public class Calc {
         String[] arr = args.split(" ");
         System.out.println(Arrays.toString(arr) + ":" + arr.length);
 
-        String num1 = arr[0];
-        String symbol = arr[1];
-        String num2 = arr[2];
-        String result = operation(num1, symbol, num2);
+        String result = arr[0];
 
-        if (arr.length == 5) {
-            num1 = result;
-            symbol = arr[3];
-            num2 = arr[4];
-            result = operation(num1, symbol, num2);
+        if (arr.length == 3) {
+            result = operation(result, arr[1], arr[2]);
+            return Integer.parseInt(result);
+        }
+        else if (arr.length == 5) {
+            result = operation(result, arr[1], arr[2]);
+            result = operation(result, arr[3], arr[4]);
 
             return Integer.parseInt(result);
         }
         else if (arr.length == 7) {
-            num1 = result;
-            symbol = arr[3];
-            num2 = arr[4];
-            result = operation(num1, symbol, num2);
-
-            num1 = result;
-            symbol = arr[5];
-            num2 = arr[6];
-            result = operation(num1, symbol, num2);
+            result = operation(result, arr[1], arr[2]);
+            result = operation(result, arr[3], arr[4]);
+            result = operation(result, arr[5], arr[6]);
 
             return Integer.parseInt(result);
         }
         else if (arr.length == 13) {
-            num1 = result;
-            symbol = arr[3];
-            num2 = arr[4];
-            result = operation(num1, symbol, num2);
-
-            num1 = result;
-            symbol = arr[5];
-            num2 = arr[6];
-            result = operation(num1, symbol, num2);
-
-            num1 = result;
-            symbol = arr[7];
-            num2 = arr[8];
-            result = operation(num1, symbol, num2);
+            result = operation(result, arr[1], arr[2]);
+            result = operation(result, arr[3], arr[4]);
+            result = operation(result, arr[5], arr[6]);
+            result = operation(result, arr[7], arr[8]);
 
             return Integer.parseInt(result);
         }
