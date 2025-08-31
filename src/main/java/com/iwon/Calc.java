@@ -35,6 +35,24 @@ public class Calc {
 
             return Integer.parseInt(result);
         }
+        else if (arr.length == 13) {
+            num1 = result;
+            symbol = arr[3];
+            num2 = arr[4];
+            result = operation(num1, symbol, num2);
+
+            num1 = result;
+            symbol = arr[5];
+            num2 = arr[6];
+            result = operation(num1, symbol, num2);
+
+            num1 = result;
+            symbol = arr[7];
+            num2 = arr[8];
+            result = operation(num1, symbol, num2);
+
+            return Integer.parseInt(result);
+        }
 
         return Integer.parseInt(result);
     }
