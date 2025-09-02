@@ -79,23 +79,23 @@ public class CalcTest {
         assertThat(Calc.run("10 * 10")).isEqualTo(100);
     }
 
-//    @Test
-//    @DisplayName("10 * -10 == -100")
-//    void t13() {
-//        assertThat(Calc.run("10 * -10")).isEqualTo(-100);
-//    }
-//
-//    @Test
-//    @DisplayName("10 * 10 * 10 == 1000")
-//    void t14() {
-//        assertThat(Calc.run("10 * 10 * 10")).isEqualTo(1000);
-//    }
-//
-//    @Test
-//    @DisplayName("10 + 5 * 2 == 20")
-//    void t15() {
-//        assertThat(Calc.run("10 + 5 * 2")).isEqualTo(20);
-//    }
+    @Test
+    @DisplayName("10 * -10 == -100")
+    void t13() {
+        assertThat(Calc.run("10 * -10")).isEqualTo(-100);
+    }
+
+    @Test
+    @DisplayName("10 * 10 * 10 == 1000")
+    void t14() {
+        assertThat(Calc.run("10 * 10 * 10")).isEqualTo(1000);
+    }
+
+    @Test
+    @DisplayName("10 + 5 * 2 == 20")
+    void t15() {
+        assertThat(Calc.run("10 + 5 * 2")).isEqualTo(20);
+    }
 //
 //    @Test
 //    @DisplayName("20 + 10 + 5 * 2 == 40")
